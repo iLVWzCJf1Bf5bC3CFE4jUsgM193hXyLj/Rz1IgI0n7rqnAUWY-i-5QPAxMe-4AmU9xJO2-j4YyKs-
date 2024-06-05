@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Utopia Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="resources/videos/30yrs.png" type="image/x-icon">
+</head>
+<body>
+    <div class="yrs">
+        <img src="resources/videos/30yrs.png" alt="" class="yrs" draggable="false">
+    </div>
+    <h1 class="title">Welcome to the<div>Elysian Utopia Website</div><b>For 2nd Prep 23-24</b></h1>
+    <img src="resources/images/advert.gif" id="advert" class="advert" draggable="false">
+    <h4 class="subTitle">Pick a topic to dive into!</h4>
+    <div class="topicsWrapper">
+        <div class="topic" onclick="select(this.id)" id="one"><p>Outstanding</p></div>
+        <div class="topic" onclick="select(this.id)" id="two"><p>High Interaction <br> Skills</p></div>
+        <div class="topic" onclick="select(this.id)" id="three"><p>Co-operative</p></div>
+        <div class="topic" onclick="select(this.id)" id="four"><p>Leadership</p></div>
+        <div class="topic" onclick="select(this.id)" id="five"><p>Critical & Logical <br> Thinking</p></div>
+        <div class="topic" onclick="select(this.id)" id="six"><p>Science <br> Fair Winners</p></div>
+        <div class="topic" onclick="select(this.id)" id="seven"><p>Eloquent</p></div>
+        <div class="topic" onclick="select(this.id)" id="eight"><p>Most Effective <br> Student Council</p> </div>
+        <div class="topic" onclick="select(this.id)" id="nine"><p>Most Improved</p></div>
+        <div class="topic" onclick="select(this.id)" id="ten"><p>Artistic</p></div>
+        <div class="topic" onclick="select(this.id)" id="eleven"><p>Hard Workers</p></div>
+    </div>
+
+    <div class="video">
+        <h1 id="title">${caller.innerHTML}</h1>
+        <i class="fa fa-times" onclick="hide()"></i>
+        <iframe src="" frameborder="0" id="playback" width="95%" height="100%"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
